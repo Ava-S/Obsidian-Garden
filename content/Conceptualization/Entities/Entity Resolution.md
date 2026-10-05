@@ -22,4 +22,8 @@ Subpage of [[Entities]]
 - Entity resolution answers the practical operational question: Which records represent the same real-world entity right now?
 - There's tension between historical and current truth. Both may be accurate in isolation, but the risk emerges when they are treated as equivalent.
 
+# Entity Alignment
+- **Entity Resolution / Entity Matching** typically operates over structured or semi-structured records (database tables, web data) and asks: do two records describe the same entity?
+- **Entity Alignment** typically operates over knowledge graphs and asks: do two nodes in two different KGs represent the same entity?
+
 See [[Event Resolution]]
