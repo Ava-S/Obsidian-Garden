@@ -1,6 +1,9 @@
 *How do event observations appear in data?*
 
+A single [[Event Instances]] can be observed multiple times
+
 # Event Log
+For instance, CSV or [[XES]]
 ## Definition
 - Every record describes an event with additional attributes. These additional attributes don't all necessarily belong to the event.
 ## Input

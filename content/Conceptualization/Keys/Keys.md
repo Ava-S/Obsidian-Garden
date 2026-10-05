@@ -30,45 +30,14 @@
 
 Keys are extremely useful in data integration and data migration pipelines
 
-# Events and keys
 
-- Events don't have a natural set of properties that together ensure their uniqueness
-	- Timestamp + activity is not sufficient to ensure an event is unique
-	- Timestamp + activity + object id similarly is not sufficient as a single event might act on multiple objects
-- So, having an identifier could be useful for events constraint events, to refer to events and also to identify events --> this is the purpose of an identifier (the key)
-	- However, the identifier is artificially created and does not on its own already guarantee uniqueness and uniqueness must be checked/modelled
 
-- Source data generally does not provide event identifiers, (e.g. case studies NXP and Croma)  
-    --> so the assumption of event identifiers does not hold in general, and hence we must deal with the assumption that it is generally not there.
-- If there is no explicit event identifiers we might have
-	- convergence/duplicate events --> deduplication
-	- lower level of granularity than desired events --> event abstraction
-- Therefore, we must deal with **event resolution**.
-	- Similarly to objects and relationships, events need to be modelled (resolved) in OCED and EKG.
 
-## Examples of event resolution
-*What to do when assumption of explicit event identifier or unique event records (implicit event identifier) is violated?*
+Discussions
+- See [[Events and keys]]
 
-- NXP (resolved outside and inside EKG)
-	- Discretize sensor recordings into events (outside EKG)
-	- Merge different events into a single batch event (Therefore, we merge the events that happened simultaneously and at the same equipment ID into one event. This event is then correlated to all the wafers involved in that event.)
 
-- GR3N (resolved outside and inside EKG)
-	- Discretize sensor signals into low-level events (outside EKG)
-	- Turn low-level sensor events into process-level movement events (within EKG)
 
-- Croma (resolved within EKG)
-	- Sensor events naturally had a one-to-one mapping to process-level events. So no event abstraction required.
-	- However, as sensors could be triggered multiple times, there were multiple observations of the same event (removed in EKG)
-
-- BPIC14 (resolved within EKG)
-	- An OPEN change event could be imported twice, is merged in EKG.
-
-# Events and indexing
-- This falls outside the scope of conceptualization, and is for performance gains
-- This is still to be explored whether we need indexes on events, for performance gains
-	- It could be interesting to create a range index on the timestamp of events to increase query speed
-	- It could also be interesting to check whether an index on the event identifier is useful --> if not, then maybe we don't need an identifier, but I think it would still enforce reasoning on whether events are unique or not.
 
 
 
