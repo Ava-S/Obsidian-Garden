@@ -8,7 +8,8 @@ Subpage of [[Entities]]
 - With good entity resolution, every real-world thing has exactly one node, every relationships lands on the right place
 
 ## When to do entity resolution?
-### Position 1: one real-world thing = one node
+### Position 1: one real-world thing = one node 
+- Each fact lives in one natural place
 - This is a rather philosophical question, but given the number of articles I found on entity resolution and what was told to me during the Neo4j courses, it seems that this is the dominant position .
 - If one real world thing is represented by multiple nodes, that the graph no longer faithfully represents the domain, but it represents the observations of the domain.
 - Several tooling exists to merge nodes that refer to the same real-world object into a single canonical node.
