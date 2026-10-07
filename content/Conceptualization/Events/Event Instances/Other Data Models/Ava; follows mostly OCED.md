@@ -11,8 +11,8 @@ We have also modelled non-atomic events, think about the high-level events in BP
 - Activity instance vs activity (https://link.springer.com/article/10.1007/s41066-020-00226-2)
 
 - Maybe there is an additional concept needed to indicate non-atomic events. 
-	- Could be non-atomic events, or interval events, or span events
-	- And then we also have atomic events or point events
+	- Non-atomic events:, Non-atomic events, interval events, or span events
+	- Atomic events: atomic events or point events
 
 ## Event Types
 - Every event has exactly one event type. 
