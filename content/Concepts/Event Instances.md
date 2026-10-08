@@ -14,10 +14,11 @@ Event instances may be observed in source data or inferred from available inform
 | Concept           | Difference                                                                                                                                                           |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Event Type        | The type describes a kind of event that may occur. An event instance instantiates an event type by representing a particular occurrence of that type.                |
-| Activity instance | An activity instance represents a phenomenon that extends over a period of time.                                                                                     |
 | Event observation | An event observation represents a (partial) recording of an event instance in a particular source. Multiple event observations may refer to the same event instance. |
 ## To-dos
 - [ ] Work out event types
+- [ ] Work out non-atomic events
+- [ ] Work out activity (executions) and types 
 - [ ] Work out timestamp
 - [ ] Work out attributes
 ## Open questions
