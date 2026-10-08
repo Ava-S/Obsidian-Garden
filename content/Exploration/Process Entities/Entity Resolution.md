@@ -1,4 +1,4 @@
-Subpage of [[Entities]]
+Subpage of [[Exploration/Process Entities/Process Entities]]
 - For entities (both object and events), there is often not a single one-to-one mapping between reality and what has been observed in the data.
 - This phenomenon is known as entity resolution in knowledge graphs
   [https://kindatechnical.com/graph-theory-applications/entity-resolution-in-knowledge-graphs.html](https://kindatechnical.com/graph-theory-applications/entity-resolution-in-knowledge-graphs.html)

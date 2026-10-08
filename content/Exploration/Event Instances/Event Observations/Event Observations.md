@@ -1,6 +1,6 @@
 *How do event observations appear in data?*
 
-A single [[Event Instances]] can be observed multiple times
+A single [[Conceptualization/Events/Event Instances/Event Instances]] can be observed multiple times
 
 # Event Log
 For instance, CSV or [[XES]]
