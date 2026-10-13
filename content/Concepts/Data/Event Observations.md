@@ -1,10 +1,16 @@
 ## Definition 
 
-> An event observation represents a recording of an event (instance) in a particular source. Multiple event observations may refer to the same event instance. 
+> An event observation represents a (partial) recording of an event (instance) in a particular source. Multiple event observations may refer to the same event instance. 
+> For instance, 2 sensors recording the same event leading to 2 event observations of a single event instance.
+
+Some event observations are not relevant for the model. 
+
+# Reality - Data - Model
+- Event observations are on the data level. 
 ## Common sources
 
 Raw records can be interpreted/extracted/discretized into event observations. Below I've added some common sources that contain event observations.
-### Event Logs
+### Event Logs --> every record represent an event observation
 Every record represents an event observation and contains information from which the event type and timestamp can be determined. A record may contain additional attributes that do not necessarily describe the event itself.
 
 
@@ -21,7 +27,7 @@ Every record represents an event observation and contains information from which
 -  Determine which event observations refer to the same underlying event instance.
 
 ### Object data (todo better name)
-Every record represents an object observation. Object observations may contain information about events involving the observed object, such as timestamps representing observations of operations performed on the object.
+Every record represents an object. Object observations may contain information about events involving the observed object, such as timestamps representing observations of operations performed on the object.
 
 Example: timestamp representing when the observed object was opened.
 ![[Object Data.png|530]]
@@ -38,7 +44,9 @@ Example: timestamp representing when the observed object was opened.
 -  Determine which event observations refer to the same underlying event instance.
 
 ### Sensor Data
-Sensor data describes measurements recorded by sensors. Depending on the format. each record may represent something different. In wide files, each record represents a time point with measurements from multiple sensors. In long files, each records represents a measurement from a single sensor. The sensor variable may be represented in a column, or, when each sensor has its own file, by the file itself.
+Sensor data describes measurements recorded by sensors. Depending on the format. each record may represent something different. 
+- In wide files, each record represents a time point with measurements from multiple sensors. 
+- In long files, each records represents a measurement from a single sensor. The sensor variable may be represented in a column, or, when each sensor has its own file, by the file itself.
 
 - Example of a long file where each sensor represents it own file
 	![[Croma Sensor Data.png]]
@@ -61,7 +69,7 @@ Sensor data describes measurements recorded by sensors. Depending on the format.
 
 | Concept                                       | Difference                                                                                                                                                           |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Concepts/Event Instances\|Event Instances]] | An event instance represents the occurrence, multiple event observations might refer to the same event instance.                                                     |
+| [[Concepts/Model/Event Instances/Event Instances\|Event Instances]] | An event instance represents the occurrence, multiple event observations might refer to the same event instance.                                                     |
 | Event Resolution                              | Event resolution is the operation of determining which event observations refer to the same event instance.                                                          |
 | Event observation                             | An event observation represents a (partial) recording of an event instance in a particular source. Multiple event observations may refer to the same event instance. |
 ## To-dos

@@ -4,10 +4,10 @@
 
 |               | **Event**                                     | **Object**                                      |
 | ------------- | --------------------------------------------- | ----------------------------------------------- |
-| **Instances** | [[Concepts/Event Instances\|Event Instances]] | [[Concepts/Object Instances\|Object Instances]] |
+| **Instances** | [[Concepts/Model/Event Instances/Event Instances\|Event Instances]] | [[Concepts/Object Instances\|Object Instances]] |
 | **Type**      | [[Concepts/Event Type\|Event Type]]           | [[Concepts/Object Types\|Object Types]]         |
 ## Origin
-Process entities can be directly observed in source data or derived from available information and domain knowledge through inference, abstraction, enrichment or other forms of processing.  
+Process entities can be observed in source data or derived from available information and domain knowledge through inference, abstraction, enrichment or other forms of processing.  
 ## Role in the framework
 
 The process entity concept provides an umbrella term for representing and reasoning about different types of entities in process data.

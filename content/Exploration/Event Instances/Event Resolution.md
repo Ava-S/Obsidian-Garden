@@ -1,5 +1,18 @@
 As events are entities, we also might need [[Entity Resolution]] for events.
 
+
+# What makes an event unique and what is its identity?
+Make them unique by time and relevant concept information
+	- Events don't have a name --> identifier would be artificial for convenience to give it a name
+	- All properties of the event that make it itself, what properties identify the event
+		- It could be that not all properties of the event are in the data --> it could lead to incorrect events
+		- Sometimes, we can inject **domain knowledge** to infer the missing properties (or something alike)
+	- At some point, someone says these are the properties that together form the event.
+
+
+
+
+
 ## Examples of event resolution
 #example
 *What to do when assumption of explicit event identifier or unique event records (implicit event identifier) is violated?*
