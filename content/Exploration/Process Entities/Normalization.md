@@ -17,7 +17,7 @@ Different normalization forms
 - 3NF --> avoid transitive dependencies, a non-key column depends on another non-key column
 - BCNF --> for every non-trivial functional dependency x--> y, X must be the superkey
 
-Normalization formalizes the rules for tables whose entities are already correctly identifier, it does not, on its own, tell you which entities should exist
+Normalization formalizes the rules for tables whose entities are already correctly identified, it does not, on its own, tell you which entities should exist
 
 Normal forms check structure, not design
 

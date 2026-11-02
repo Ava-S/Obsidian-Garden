@@ -81,4 +81,12 @@ Explicit vs implicit relationships
 
 Domain level vs instance level
 - Domain experts might identify entities and relationships and then proof for these can be found in the data on an instance level. This will require iterations. 
-- 
+
+
+# Notes
+![[Notes 162.pdf]]
+
+
+-- 
+[https://doi.org/10.1016/j.datak.2023.102157](https://doi.org/10.1016/j.datak.2023.102157 "https://doi.org/10.1016/j.datak.2023.102157") 
+[https://doi.org/10.1007/978-3-030-79382-1_12](https://doi.org/10.1007/978-3-030-79382-1_12 "https://doi.org/10.1007/978-3-030-79382-1_12")
